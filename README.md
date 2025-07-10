@@ -78,3 +78,22 @@ void moveAllServos(int angle) {
     Serial.println("Invalid angle! Please use 0-180 degrees.");
   }
 }
+
+
+
+
+
+# The Algorithm for humanoid robot 
+* Initialization: Setting up the robot's initial state and parameters
+* Walking Phases (repeated for each step):
+
+Phase 1: Weight shift to support foot
+Phase 2: Lift swing foot off ground
+Phase 3: Swing foot forward
+Phase 4: Lower foot to ground
+Phase 5: Transfer weight to new support foot
+
+* Finalization: Stabilize and return to standing position
+The algorithm uses a state machine approach where each phase has specific joint angle targets and center of mass adjustments. The loop continues until the desired number of steps is completed, then the robot stabilizes in a balanced standing position.
+Key decision points include determining which foot to swing (alternating left/right) and checking if more steps are needed. Each phase includes safety checks and gradual movements to maintain balance throughout the walking cycle
+
