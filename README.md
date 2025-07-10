@@ -97,3 +97,4 @@ Phase 5: Transfer weight to new support foot
 The algorithm uses a state machine approach where each phase has specific joint angle targets and center of mass adjustments. The loop continues until the desired number of steps is completed, then the robot stabilizes in a balanced standing position.
 Key decision points include determining which foot to swing (alternating left/right) and checking if more steps are needed. Each phase includes safety checks and gradual movements to maintain balance throughout the walking cycle
 
+<img width="997" height="1120" alt="Image" src="https://github.com/user-attachments/assets/a8a9e5fc-8590-4106-bdce-a774498c67b8" />
